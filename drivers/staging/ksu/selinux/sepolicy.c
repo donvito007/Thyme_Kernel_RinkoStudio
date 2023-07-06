@@ -738,10 +738,10 @@ static bool add_typeattribute(struct policydb *db, const char *type,
 //////////////////////////////////////////////////////////////////////////
 
 // Operation on types
-bool ksu_type(struct policydb *db, const char *name, const char *attr)
-{
-	return add_type(db, name, false) && add_typeattribute(db, name, attr);
-}
+// bool ksu_type(struct policydb *db, const char *name, const char *attr)
+//{
+//	return add_type(db, name, false) && add_typeattribute(db, name, attr);
+//}
 
 bool ksu_attribute(struct policydb *db, const char *name)
 {
