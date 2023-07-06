@@ -743,18 +743,18 @@ static bool add_typeattribute(struct policydb *db, const char *type,
 //	return add_type(db, name, false) && add_typeattribute(db, name, attr);
 //}
 
-bool ksu_attribute(struct policydb *db, const char *name)
-{
-	return add_type(db, name, true);
-}
+//bool ksu_attribute(struct policydb *db, const char *name)
+//{
+//	return add_type(db, name, true);
+//}
 
-bool ksu_permissive(struct policydb *db, const char *type)
-{
-	return set_type_state(db, type, true);
-}
+//bool ksu_permissive(struct policydb *db, const char *type)
+//{
+//	return set_type_state(db, type, true);
+//}
 
-bool ksu_enforce(struct policydb *db, const char *type)
-{
+//bool ksu_enforce(struct policydb *db, const char *type)
+/*{
 	return set_type_state(db, type, false);
 }
 
@@ -843,3 +843,4 @@ bool ksu_genfscon(struct policydb *db, const char *fs_name, const char *path,
 {
 	return add_genfscon(db, fs_name, path, ctx);
 }
+*/
